@@ -1,0 +1,27 @@
+namespace snakedata;
+table snakepacketdata{
+	allsnakes:[snakebodydata];
+	board:boarddata;
+	snakefood:snakefooddata;
+	gamestatus:string;
+	gamescore:int;
+	numberofsnakes:int;
+}
+table snakebodydata{
+	snakebody:[snakebodypoint];
+	
+	
+	}
+table snakefooddata{
+	x:int;
+	y:int;
+}
+table boarddata{
+	width:int;
+	height:int;
+}
+table snakebodypoint{
+	x:int;
+	y:int;
+}
+root_type snakepacketdata;

@@ -1,0 +1,11 @@
+﻿body {
+    background-color:lightblue;
+}
+#snakeRender{
+    background-image:url("background.jpg");
+}
+#game_info{
+    position:fixed;
+    left:550px;
+    top:0px;
+}

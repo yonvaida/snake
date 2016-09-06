@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\QT\5.6\msvc2015_64\include;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\qrc_snakeclient.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="deserialization.cpp" />
+    <ClCompile Include="snakeclient.cpp" />
+    <ClCompile Include="snakeclientGUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="snakeclient.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="snakeclient.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="flatbuffer\snakedata_generated.h" />
+    <ClInclude Include="deserialization.h" />
+    <ClInclude Include="snakeclientGUI.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\SnakeServer\packages\boost.1.60.0.0\build\native\boost.targets" Condition="Exists('..\SnakeServer\packages\boost.1.60.0.0\build\native\boost.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_system.1.60.0.0\build\native\boost_system.targets" Condition="Exists('..\SnakeServer\packages\boost_system.1.60.0.0\build\native\boost_system.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_atomic-vc140.1.60.0.0\build\native\boost_atomic-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_atomic-vc140.1.60.0.0\build\native\boost_atomic-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_chrono-vc140.1.60.0.0\build\native\boost_chrono-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_chrono-vc140.1.60.0.0\build\native\boost_chrono-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_container-vc140.1.60.0.0\build\native\boost_container-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_container-vc140.1.60.0.0\build\native\boost_container-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_context-vc140.1.60.0.0\build\native\boost_context-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_context-vc140.1.60.0.0\build\native\boost_context-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_coroutine-vc140.1.60.0.0\build\native\boost_coroutine-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_coroutine-vc140.1.60.0.0\build\native\boost_coroutine-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_exception-vc140.1.60.0.0\build\native\boost_exception-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_exception-vc140.1.60.0.0\build\native\boost_exception-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_filesystem-vc140.1.60.0.0\build\native\boost_filesystem-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_filesystem-vc140.1.60.0.0\build\native\boost_filesystem-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_graph-vc140.1.60.0.0\build\native\boost_graph-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_graph-vc140.1.60.0.0\build\native\boost_graph-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_iostreams-vc140.1.60.0.0\build\native\boost_iostreams-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_iostreams-vc140.1.60.0.0\build\native\boost_iostreams-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_locale-vc140.1.60.0.0\build\native\boost_locale-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_locale-vc140.1.60.0.0\build\native\boost_locale-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_log-vc140.1.60.0.0\build\native\boost_log-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_log-vc140.1.60.0.0\build\native\boost_log-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_log_setup-vc140.1.60.0.0\build\native\boost_log_setup-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_log_setup-vc140.1.60.0.0\build\native\boost_log_setup-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_math_c99-vc140.1.60.0.0\build\native\boost_math_c99-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_math_c99-vc140.1.60.0.0\build\native\boost_math_c99-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_math_c99f-vc140.1.60.0.0\build\native\boost_math_c99f-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_math_c99f-vc140.1.60.0.0\build\native\boost_math_c99f-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_math_c99l-vc140.1.60.0.0\build\native\boost_math_c99l-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_math_c99l-vc140.1.60.0.0\build\native\boost_math_c99l-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_math_tr1-vc140.1.60.0.0\build\native\boost_math_tr1-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_math_tr1-vc140.1.60.0.0\build\native\boost_math_tr1-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_math_tr1f-vc140.1.60.0.0\build\native\boost_math_tr1f-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_math_tr1f-vc140.1.60.0.0\build\native\boost_math_tr1f-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_math_tr1l-vc140.1.60.0.0\build\native\boost_math_tr1l-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_math_tr1l-vc140.1.60.0.0\build\native\boost_math_tr1l-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_prg_exec_monitor-vc140.1.60.0.0\build\native\boost_prg_exec_monitor-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_prg_exec_monitor-vc140.1.60.0.0\build\native\boost_prg_exec_monitor-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_program_options-vc140.1.60.0.0\build\native\boost_program_options-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_program_options-vc140.1.60.0.0\build\native\boost_program_options-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_random-vc140.1.60.0.0\build\native\boost_random-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_random-vc140.1.60.0.0\build\native\boost_random-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_regex-vc140.1.60.0.0\build\native\boost_regex-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_regex-vc140.1.60.0.0\build\native\boost_regex-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_serialization-vc140.1.60.0.0\build\native\boost_serialization-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_serialization-vc140.1.60.0.0\build\native\boost_serialization-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_signals-vc140.1.60.0.0\build\native\boost_signals-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_signals-vc140.1.60.0.0\build\native\boost_signals-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_system-vc140.1.60.0.0\build\native\boost_system-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_system-vc140.1.60.0.0\build\native\boost_system-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_test_exec_monitor-vc140.1.60.0.0\build\native\boost_test_exec_monitor-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_test_exec_monitor-vc140.1.60.0.0\build\native\boost_test_exec_monitor-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_thread-vc140.1.60.0.0\build\native\boost_thread-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_thread-vc140.1.60.0.0\build\native\boost_thread-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_timer-vc140.1.60.0.0\build\native\boost_timer-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_timer-vc140.1.60.0.0\build\native\boost_timer-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_type_erasure-vc140.1.60.0.0\build\native\boost_type_erasure-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_type_erasure-vc140.1.60.0.0\build\native\boost_type_erasure-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_unit_test_framework-vc140.1.60.0.0\build\native\boost_unit_test_framework-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_unit_test_framework-vc140.1.60.0.0\build\native\boost_unit_test_framework-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_wave-vc140.1.60.0.0\build\native\boost_wave-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_wave-vc140.1.60.0.0\build\native\boost_wave-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost_wserialization-vc140.1.60.0.0\build\native\boost_wserialization-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost_wserialization-vc140.1.60.0.0\build\native\boost_wserialization-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\boost-vc140.1.60.0.0\build\native\boost-vc140.targets" Condition="Exists('..\SnakeServer\packages\boost-vc140.1.60.0.0\build\native\boost-vc140.targets')" />
+    <Import Project="..\SnakeServer\packages\protobuf.2.5.0.0\build\native\protobuf.targets" Condition="Exists('..\SnakeServer\packages\protobuf.2.5.0.0\build\native\protobuf.targets')" />
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="$(DefaultQtVersion)" Qt5Version_x0020_x64="$(DefaultQtVersion)" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\SnakeServer\packages\boost.1.60.0.0\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost.1.60.0.0\build\native\boost.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_system.1.60.0.0\build\native\boost_system.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_system.1.60.0.0\build\native\boost_system.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_atomic-vc140.1.60.0.0\build\native\boost_atomic-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_atomic-vc140.1.60.0.0\build\native\boost_atomic-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_chrono-vc140.1.60.0.0\build\native\boost_chrono-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_chrono-vc140.1.60.0.0\build\native\boost_chrono-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_container-vc140.1.60.0.0\build\native\boost_container-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_container-vc140.1.60.0.0\build\native\boost_container-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_context-vc140.1.60.0.0\build\native\boost_context-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_context-vc140.1.60.0.0\build\native\boost_context-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_coroutine-vc140.1.60.0.0\build\native\boost_coroutine-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_coroutine-vc140.1.60.0.0\build\native\boost_coroutine-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_exception-vc140.1.60.0.0\build\native\boost_exception-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_exception-vc140.1.60.0.0\build\native\boost_exception-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_filesystem-vc140.1.60.0.0\build\native\boost_filesystem-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_filesystem-vc140.1.60.0.0\build\native\boost_filesystem-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_graph-vc140.1.60.0.0\build\native\boost_graph-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_graph-vc140.1.60.0.0\build\native\boost_graph-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_iostreams-vc140.1.60.0.0\build\native\boost_iostreams-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_iostreams-vc140.1.60.0.0\build\native\boost_iostreams-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_locale-vc140.1.60.0.0\build\native\boost_locale-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_locale-vc140.1.60.0.0\build\native\boost_locale-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_log-vc140.1.60.0.0\build\native\boost_log-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_log-vc140.1.60.0.0\build\native\boost_log-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_log_setup-vc140.1.60.0.0\build\native\boost_log_setup-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_log_setup-vc140.1.60.0.0\build\native\boost_log_setup-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_math_c99-vc140.1.60.0.0\build\native\boost_math_c99-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_math_c99-vc140.1.60.0.0\build\native\boost_math_c99-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_math_c99f-vc140.1.60.0.0\build\native\boost_math_c99f-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_math_c99f-vc140.1.60.0.0\build\native\boost_math_c99f-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_math_c99l-vc140.1.60.0.0\build\native\boost_math_c99l-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_math_c99l-vc140.1.60.0.0\build\native\boost_math_c99l-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_math_tr1-vc140.1.60.0.0\build\native\boost_math_tr1-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_math_tr1-vc140.1.60.0.0\build\native\boost_math_tr1-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_math_tr1f-vc140.1.60.0.0\build\native\boost_math_tr1f-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_math_tr1f-vc140.1.60.0.0\build\native\boost_math_tr1f-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_math_tr1l-vc140.1.60.0.0\build\native\boost_math_tr1l-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_math_tr1l-vc140.1.60.0.0\build\native\boost_math_tr1l-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_prg_exec_monitor-vc140.1.60.0.0\build\native\boost_prg_exec_monitor-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_prg_exec_monitor-vc140.1.60.0.0\build\native\boost_prg_exec_monitor-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_program_options-vc140.1.60.0.0\build\native\boost_program_options-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_program_options-vc140.1.60.0.0\build\native\boost_program_options-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_random-vc140.1.60.0.0\build\native\boost_random-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_random-vc140.1.60.0.0\build\native\boost_random-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_regex-vc140.1.60.0.0\build\native\boost_regex-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_regex-vc140.1.60.0.0\build\native\boost_regex-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_serialization-vc140.1.60.0.0\build\native\boost_serialization-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_serialization-vc140.1.60.0.0\build\native\boost_serialization-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_signals-vc140.1.60.0.0\build\native\boost_signals-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_signals-vc140.1.60.0.0\build\native\boost_signals-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_system-vc140.1.60.0.0\build\native\boost_system-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_system-vc140.1.60.0.0\build\native\boost_system-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_test_exec_monitor-vc140.1.60.0.0\build\native\boost_test_exec_monitor-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_test_exec_monitor-vc140.1.60.0.0\build\native\boost_test_exec_monitor-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_thread-vc140.1.60.0.0\build\native\boost_thread-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_thread-vc140.1.60.0.0\build\native\boost_thread-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_timer-vc140.1.60.0.0\build\native\boost_timer-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_timer-vc140.1.60.0.0\build\native\boost_timer-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_type_erasure-vc140.1.60.0.0\build\native\boost_type_erasure-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_type_erasure-vc140.1.60.0.0\build\native\boost_type_erasure-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_unit_test_framework-vc140.1.60.0.0\build\native\boost_unit_test_framework-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_unit_test_framework-vc140.1.60.0.0\build\native\boost_unit_test_framework-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_wave-vc140.1.60.0.0\build\native\boost_wave-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_wave-vc140.1.60.0.0\build\native\boost_wave-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost_wserialization-vc140.1.60.0.0\build\native\boost_wserialization-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost_wserialization-vc140.1.60.0.0\build\native\boost_wserialization-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\boost-vc140.1.60.0.0\build\native\boost-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\boost-vc140.1.60.0.0\build\native\boost-vc140.targets'))" />
+    <Error Condition="!Exists('..\SnakeServer\packages\protobuf.2.5.0.0\build\native\protobuf.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\SnakeServer\packages\protobuf.2.5.0.0\build\native\protobuf.targets'))" />
+  </Target>
+</Project>
